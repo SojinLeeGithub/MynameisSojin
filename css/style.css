@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poetsen+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+nav ul li {
+  list-style: none;
+  font-family: "Jersey 15", sans-serif;
+}
+
+#asd ul li {
+  list-style: none;
+  display: inline;
+}
+
+#container {
+  margin: 0 auto;
+  width: 1200px;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background: #C6FFDD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#logo {
+  float: left;
+  width: 300px;
+  height: 100px;
+  padding-left: 5px;
+  display: flex;
+  align-items: center; 
+ 
+}
+
+#logo h1 {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-size; 30px;
+  color: #96A5FF;
+  text-shadow: 0 2px #07c; 
+  text-align: center;
+
+}
+
+#logo a {
+  text-decoration-line: none;
+}
+
+#logo :hover {
+  color: #46D2D2;
+  text-shadow: 0 -1px #07c;
+}
+
+nav {
+  float: right;
+  width: 900px;
+  height: 100px;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+#topMenu {
+  height: 60px;
+}
+#topMenu > li {
+  float: left;
+  font-size:  30px;
+  position: relative;
+  margin-right: 35px;
+  
+
+}
+#topMenu > li > a {
+  display: block;
+  color: 	#FFA8A5;
+  font-weight: 10px;
+  text-shadow: 0 1px #07c; 
+  padding: 0px
+  text-decoration-line: none;
+}
+
+#topMenu > li > a > span {
+  font-size : 0.5em;
+}
+
+#topMenu > li > a:hover {
+  color: #46D2D2;
+  text-shadow: 0 -1px #07c;
+}
+
+#topMenu > li > ul {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: rgba(225, 225, 225, 0.6);
+  left: 20px;
+  margin: 0;
+  padding-bottom: 7px;
+  left: 10px;
+}
+#topMenu > li > ul > li > a {
+  font-size: 20px;
+  padding: 10px;
+  color:  #FF8CFF;
+
+}
+
+#topMenu > li:hover > ul {
+  display: block;
+  z-index: 10;
+}
+
+#topMenu > li > ul > li > a:hover {
+  color: #8EE1D2;
+}
+
+#slideShow {
+  clear: both;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position:relative;
+}
+#slides {
+  position: absolute;
+}
+
+#slides > img {
+  width: 100%;
+  float: left;
+}
+
+
+button {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+  color: #000;
+  font-weight:800;
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+#prev {
+  left: 0;
+}
+#next {
+  right: 0;
+}
+button:hover {
+  background-color: #222;
+  color:#fff;
+  opacity: 0.6;
+  cursor: pointer;
+}
+button:focus {
+  outline:0;
+}
+
+/* 부트스랩 tap */
+#qwe ul li {
+  margin-left: 25px;
+}
+
+#asd ul li img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.tab-content {
+  width: 600px;
+  height: 200px;
+  background-color: #803232;
+}
+
+.container {
+  width: 100px;
+  height: 255px;
+  background-color: ;
+  float: left;
+  position: relative;
+}
+
+.col{
+  positon: relative;
+  left: -15px;
+  width: 250px;
+  font-family: "Inconsolata", monospace;
+}
+
+.col ul li {
+  background-color: #FFDCFF; 
+}
+
+.col ul li a {
+  font-size: 20px;
+  font-weight: 100px;
+  background-color: #E065CB; opacity : 0.7;
+}
+
+.row {
+  width: 400px;
+}
+
+
+/* 링크 css */
+
+#links {
+  float: right;
+  position: absolute;
+  left: 720px;
+  width: 520px;
+  height: 250px;
+  margin-left: 80px;
+  background-color:#FFDCDC;
+}
+#links h4 {
+  font-family: "Inconsolata", monospace;
+}
+
+#links ul li {
+  list-style: none;
+  float: left;
+  width: 33% /* 세 항목의 영역을 균일하게 지정 */
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+#links ul li p {
+  margin-left: 42px;
+  font-family: "Inconsolata", monospace;
+}
+
+#links ul li a span {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  line-header: 150px;
+}
+
+#quick-icon1 {
+  background-image:url('https://flexible.img.hani.co.kr/flexible/normal/904/535/imgdb/original/2023/0707/20230707500807.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+#quick-icon2 {
+  background-image:url('https://isplus.com/data/isp/image/2023/07/18/isp20230718000308.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#quick-icon3 {
+  background-image:url('https://img.vogue.co.kr/vogue/2023/07/style_64ab7e8d97503.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+#links ul li a p {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* footer css */
+
+footer {
+  clear:both;
+  width: 1200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid #ddd;
+}
+#bottomMenu{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+#bottomMenu ul {
+  margin-top: 15px;
+}
+#bottomMenu ul li {
+  float: left;
+  padding: 5px 20px;
+  border-right: 1px solid #ddd;
+  list-style: none;
+}
+
+#bottomMenu ul li:last-child {
+  border-right: none;
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+  font-size: 15px;
+  color: #666;
+}
+#bottomMenu ul li a span {
+  color: #282828;
+}
+
+#sns {
+  position: absolute;
+  right: 0; /* 오른쪽 끝에 배치 */
+}
+
+#sns ul li {
+  #quick-icon1 {
+    background-image:url('https://flexible.img.hani.co.kr/flexible/normal/904/535/imgdb/original/2023/0707/20230707500807.jpg');
+    background-size: cover;
+    background-position: center;
+  
+  }
+  border: none; /* 세로선 없이 */
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  color: red;
+}
+
+#sns ul li a {
+  width: 50px;
+  height: 50px;
+}
+#company {
+  clear: left; /* 플로팅 해제. clear: both도 가능 */
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+}
